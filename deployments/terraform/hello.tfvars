@@ -1,0 +1,6 @@
+credentials = "common-service-account.json"
+google_bucket_name = "fuchicorp-common-331"
+deployment_name = "common_tools"
+google_project_id = "tidy-arcade-286601"
+google_domain_name = "fuchicorp.com"
+deployment_environment = "tools"

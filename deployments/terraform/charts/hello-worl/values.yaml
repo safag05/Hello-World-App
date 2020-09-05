@@ -5,7 +5,7 @@
 replicaCount: 5
 
 image:
-  repository: docker.g-safa.com/hello-world-app-dev-feature:ed62d20
+  repository: ${deployment_image}
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -23,14 +23,14 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: hello.g-safa.com
+    - host: ${deployment_endpoint}
       paths: 
       - /
 
   tls: 
   - secretName: hello-g-safa
     hosts:
-      - hello.g-safa.com
+      - ${deployment_endpoint}
 
 
 globalEnvironments:
