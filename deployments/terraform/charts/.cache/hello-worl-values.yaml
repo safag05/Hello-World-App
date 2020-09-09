@@ -23,14 +23,14 @@ ingress:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: stage.hello.g-safa.com
+    - host: dev.hello.g-safa.com
       paths: 
       - /
 
   tls: 
   - secretName: hello-g-safa
     hosts:
-      - stage.hello.g-safa.com
+      - dev.hello.g-safa.com
 
 
 globalEnvironments:
