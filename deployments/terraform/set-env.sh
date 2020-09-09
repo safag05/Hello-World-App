@@ -61,6 +61,5 @@ GOOGLE_APPLICATION_CREDENTIALS="${DIR}/${CREDENTIALS}"
 export GOOGLE_APPLICATION_CREDENTIALS
 export DATAFILE
 /bin/rm -rf "$DIR/.terraform" 2>/dev/null
-##/bin/rm -rf "$PWD/hello-world.tfvars" 2>/dev/null
 echo "setenv: Initializing terraform"
-terraform init #> /dev/null
+terraform init 
