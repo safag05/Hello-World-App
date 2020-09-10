@@ -1,6 +1,7 @@
 ## Build the image based python3 
 FROM python:3
 
+
 ## Copy all the packages
 COPY . /app
 
@@ -16,3 +17,4 @@ EXPOSE 5000
 
 ## When contianer is stared python app.py 
 CMD ["/bin/sh", "-c", "python /app/app.py"]
+
